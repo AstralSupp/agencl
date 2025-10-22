@@ -47,6 +47,13 @@ agencl/
 - Supabase account (or self-hosted)
 - API keys for: Anthropic, OpenAI, ElevenLabs, Chatwoot
 
+**📖 Important:** See [SETUP_MISSING_PIECES.md](./SETUP_MISSING_PIECES.md) for detailed instructions on:
+- Getting WhatsApp Business API credentials
+- Selecting the right ElevenLabs voice
+- Configuring audio storage
+- All required environment variables
+- Common troubleshooting
+
 ### Installation
 
 1. **Clone the repository**
