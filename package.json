@@ -1,0 +1,31 @@
+{
+  "name": "agencl",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI-powered WhatsApp agent system with Chatwoot integration",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean && rm -rf node_modules .turbo",
+    "type-check": "turbo run type-check",
+    "db:generate": "pnpm --filter @agencl/db generate",
+    "db:migrate": "pnpm --filter @agencl/db migrate",
+    "worker": "pnpm --filter @agencl/worker dev"
+  },
+  "devDependencies": {
+    "turbo": "^2.2.0",
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ]
+}
